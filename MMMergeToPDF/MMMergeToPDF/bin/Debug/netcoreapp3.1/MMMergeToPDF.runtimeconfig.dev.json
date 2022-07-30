@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\modro\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\modro\\.nuget\\packages"
+    ]
+  }
+}

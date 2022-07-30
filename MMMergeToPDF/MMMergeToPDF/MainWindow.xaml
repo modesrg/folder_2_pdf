@@ -1,0 +1,24 @@
+﻿<Window x:Class="MMMergeToPDF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MMMergeToPDF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="FolderTxtBox" HorizontalAlignment="Left" Margin="31,33,0,0" Text="Select Folder to Merge..." TextWrapping="NoWrap" VerticalAlignment="Top" Width="270" TextChanged="FolderTxtBox_TextChanged" />
+        <ComboBox x:Name="RotateComboBox" HorizontalAlignment="Left" Margin="405,31,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0" SelectionChanged="RotateComboBox_SelectionChanged">
+            <ComboBoxItem Content="No Rotar" IsSelected="True" Background="{x:Null}"/>
+            <ComboBoxItem Content="Rotar Pares"/>
+            <ComboBoxItem Content="Rotar Impares"/>
+        </ComboBox>
+        <Button x:Name="BrowseBtn" Content="Browse..." HorizontalAlignment="Left" Margin="315,33,0,0" VerticalAlignment="Top" Width="70" Click="BrowseBtn_Click_1"/>
+        <Button x:Name="StartBtn" Content="Start" HorizontalAlignment="Left" Margin="31,56,0,0" VerticalAlignment="Top" Width="56" Click="StartBtn_Click"/>
+        <ComboBox x:Name="TipoFicheros" HorizontalAlignment="Left" Margin="405,60,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="TipoFicheros_SelectionChanged">
+            <ComboBoxItem Content="Merge PDFs" IsSelected="True"/>
+            <ComboBoxItem Content="Merge JPGs"/>
+        </ComboBox>
+
+    </Grid>
+</Window>
